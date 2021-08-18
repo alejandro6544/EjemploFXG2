@@ -6,6 +6,7 @@
 package ejemplofxg2;
 
 import java.net.URL;
+import java.util.LinkedList;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -21,6 +22,8 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     private Label label;
     
+    LinkedList<Object> lobj;
+    
     @FXML
     private void handleButtonAction(ActionEvent event) {
         System.out.println("You clicked me!");
@@ -30,6 +33,7 @@ public class FXMLDocumentController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
+        lobj=new LinkedList<>();
     }    
     
 }
